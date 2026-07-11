@@ -4,7 +4,6 @@ import viteLogo from "./assets/vite.svg";
 import heroImg from "./assets/hero.png";
 import tab from "./tab.module.css";
 import engines from "./engines.json";
-import { search } from "./search.js";
 
 document.querySelector("#app").innerHTML = `
 <section class="${tab.main}">
@@ -25,6 +24,5 @@ document.querySelector("#app").innerHTML = `
 
 document.querySelector("#search").addEventListener("submit", (event) => {
   event.preventDefault();
-
-  search(document.querySelector("#searchbar").value.trim());
+  window.location.href = `${engines[0].prefix}${document.querySelector("#searchbar").value.trim()}`;
 });
