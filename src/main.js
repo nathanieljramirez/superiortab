@@ -36,7 +36,7 @@ document.querySelector("#app").innerHTML = `
     <div class="${tab.row}">
       <p>Search engine:</p>
       <details class="${tab.dropdown}">
-        <summary>${selectedEngine.name}</summary>
+        <summary><img src="${selectedEngine.icon}"> ${selectedEngine.name}</summary>
         <ul id="items">
             ${engines
               .map((engine) => {
@@ -54,7 +54,9 @@ const items = document.querySelectorAll("#items li");
 items.forEach((item, index) => {
   item.addEventListener("click", () => {
     selectedEngine = engines[index];
-    document.querySelector("summary").textContent = selectedEngine.name;
+
+    const summary = document.querySelector("summary");
+    summary.innerHTML = `<img src="${selectedEngine.icon}"> ${selectedEngine.name}`;
 
     const dropdown = document.querySelector("." + tab.dropdown);
     dropdown.removeAttribute("open");

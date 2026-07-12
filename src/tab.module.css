@@ -19,11 +19,17 @@
   position: relative;
   background-color: var(--bg-secondary);
   display: inline-block;
-  width: 140px;
+  width: 160px;
   summary {
     text-align: left;
     padding: 10px 12px;
     cursor: pointer;
+    img {
+      height: 16px;
+      width: 16px;
+      display: inline-block;
+      vertical-align: top;
+    }
   }
   ul {
     background-color: var(--bg-secondary);
