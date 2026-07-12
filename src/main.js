@@ -32,6 +32,9 @@ items.forEach((item, index) => {
   item.addEventListener("click", () => {
     selectedEngine = engines[index];
     document.querySelector("summary").textContent = selectedEngine.name;
+
+    const dropdown = document.querySelector("." + tab.dropdown);
+    dropdown.removeAttribute("open");
   });
 });
 
