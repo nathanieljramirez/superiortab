@@ -5,6 +5,7 @@
   --text-h: #08060d;
   --bg: #fff;
   --accent: #3b89ff;
+  --light-accent: #ceebff;
   --sans: "Roboto", sans-serif;
   --heading: "Roboto", sans-serif;
   --mono: ui-monospace, Consolas, monospace;
@@ -29,7 +30,6 @@
     --text: #9ca3af;
     --text-h: #f3f4f6;
     --bg: #16181d;
-    --accent: #ceebff;
   }
 }
 
