@@ -6,7 +6,7 @@
   .dropdown {
     margin-top: 15px;
     border-radius: 5px;
-    background-color: #111;
+    background-color: var(--bg-secondary);
     display: inline-block;
     width: 140px;
     summary {
@@ -24,10 +24,7 @@
         padding: 10px 12px;
         border-radius: 5px;
         &:hover {
-          background-color: #222;
-        }
-        &:active {
-          background: #444;
+          background-color: var(--bg-secondary-hover);
         }
       }
     }
