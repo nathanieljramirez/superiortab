@@ -16,7 +16,9 @@ document.querySelector("#app").innerHTML = `
     <form id="search">
         <input type="text" id="searchbar" placeholder="Search the web"></input>
     </form>
-    <details class="${tab.dropdown}">
+    <div class="${tab.row}">
+      <p>Search engine:</p>
+      <details class="${tab.dropdown}">
         <summary>${selectedEngine.name}</summary>
         <ul id="items">
             ${engines
@@ -25,7 +27,8 @@ document.querySelector("#app").innerHTML = `
               })
               .join("")}
         </ul>
-    </details
+      </details>
+    </div>
 </section>
 `;
 
