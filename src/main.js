@@ -14,9 +14,11 @@ document.querySelector("#app").innerHTML = `
     <details class="${tab.dropdown}">
         <summary>Search Engines</summary>
         <ul>
-            ${engines.map((engine) => {
-              return `<li><a href="#">${engine.name}</a></li>`;
-            })}
+            ${engines
+              .map((engine) => {
+                return `<li><a href="#">${engine.name}</a></li>`;
+              })
+              .join("")}
         </ul>
     </details
 </section>
