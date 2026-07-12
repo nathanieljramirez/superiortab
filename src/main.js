@@ -16,7 +16,7 @@ document.querySelector("#app").innerHTML = `
         <ul>
             ${engines
               .map((engine) => {
-                return `<li><a href="#">${engine.name}</a></li>`;
+                return `<li>${engine.name}</li>`;
               })
               .join("")}
         </ul>
