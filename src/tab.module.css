@@ -8,7 +8,9 @@
     border-radius: 5px;
     background-color: #111;
     display: inline-block;
+    width: 140px;
     summary {
+      text-align: left;
       padding: 10px 12px;
       cursor: pointer;
     }
