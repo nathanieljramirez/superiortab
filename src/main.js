@@ -9,7 +9,10 @@ let selectedEngine = engines[0];
 
 document.querySelector("#app").innerHTML = `
 <section class="${tab.main}">
-    <h1 class="${tab.title}">SuperiorTab</h1>
+    <div class="${tab.title}">
+      <h1>SuperiorTab</h1>
+      <p>AI free internet browsing</p>
+    </div>
     <form id="search">
         <input type="text" id="searchbar" placeholder="Search the web"></input>
     </form>
