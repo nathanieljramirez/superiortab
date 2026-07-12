@@ -1,18 +1,24 @@
 import "./style.css";
 import tab from "./tab.module.css";
+import google from "./assets/google.svg";
+import duckduckgo from "./assets/duckduckgo.svg";
+import bing from "./assets/bing.svg";
 
 const engines = [
   {
     name: "Google",
     prefix: "https://www.google.com/search?tbs=1&q=",
+    icon: google,
   },
   {
     name: "DuckDuckGo",
     prefix: "https://noai.duckduckgo.com/?q=",
+    icon: duckduckgo,
   },
   {
     name: "Bing",
     prefix: "https://www.bing.com/search?copilot=off&q=",
+    icon: bing,
   },
 ];
 
