@@ -1,6 +1,20 @@
 import "./style.css";
 import tab from "./tab.module.css";
-import engines from "./engines.json";
+
+const engines = [
+  {
+    name: "Google",
+    prefix: "https://www.google.com/search?tbs=1&q=",
+  },
+  {
+    name: "DuckDuckGo",
+    prefix: "https://noai.duckduckgo.com/?q=",
+  },
+  {
+    name: "Bing",
+    prefix: "https://www.bing.com/search?copilot=off&q=",
+  },
+];
 
 let selectedEngine = engines[0];
 
