@@ -92,3 +92,14 @@ form {
     background-color: var(--bg-secondary-hover);
   }
 }
+
+.editor {
+  position: absolute;
+  top: 50%;
+  left: 24px;
+  transform: translateY(-50%);
+  border-radius: 16px;
+  height: 600px;
+  width: 250px;
+  background-color: var(--bg-secondary);
+}
