@@ -44,7 +44,7 @@ document.querySelector("#app").innerHTML = `
 
 <section class="${tab.editor}" style="display:none;">
   <h3>Background</h3>
-  <button class="${tab.background}"></button>
+  <button class="${tab.background}" id="color"></button>
   <h3>Search Engine</h3>
     <details class="${tab.dropdown}">
       <summary><img src="${selectedEngine.icon}"> ${selectedEngine.name}</summary>
@@ -85,4 +85,10 @@ document.querySelector("." + tab.edit).addEventListener("click", () => {
   } else {
     editor.style.display = "none";
   }
+});
+
+document.querySelector("#color").addEventListener("click", () => {
+  const color = prompt("Add new color below:");
+  const root = document.documentElement;
+  root.style.setProperty("--bg", color);
 });
