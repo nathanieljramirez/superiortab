@@ -95,6 +95,8 @@ form {
 
 .editor {
   position: absolute;
+  text-align: left;
+  padding: 24px;
   top: 50%;
   left: 24px;
   transform: translateY(-50%);
