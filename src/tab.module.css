@@ -74,3 +74,21 @@ form {
   align-items: center;
   gap: 5px;
 }
+
+.edit {
+  position: absolute;
+  left: 24px;
+  bottom: 24px;
+  background-color: var(--bg-secondary);
+  cursor: pointer;
+  width: 36px;
+  height: 36px;
+  border: none;
+  border-radius: 50%;
+  svg {
+    height: 16px;
+  }
+  &:hover {
+    background-color: var(--bg-secondary-hover);
+  }
+}
