@@ -44,6 +44,7 @@ document.querySelector("#app").innerHTML = `
 
 <section class="${tab.editor}" style="display:none;">
   <h3>Background</h3>
+  <button class="${tab.background}"></button>
   <h3>Search Engine</h3>
     <details class="${tab.dropdown}">
       <summary><img src="${selectedEngine.icon}"> ${selectedEngine.name}</summary>

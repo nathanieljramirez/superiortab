@@ -96,3 +96,15 @@ form {
   width: 250px;
   background-color: var(--bg-secondary);
 }
+
+.background {
+  background-color: var(--bg);
+  cursor: pointer;
+  border: none;
+  border-radius: 24px;
+  width: 160px;
+  height: 90px;
+  &:focus {
+    outline: var(--light-accent) 4px solid;
+  }
+}
