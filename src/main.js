@@ -47,6 +47,13 @@ document.querySelector("#app").innerHTML = `
       </details>
     </div>
 </section>
+
+<button class="${tab.edit}">
+  <svg viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0.707107 9.19239L2.82843 8.48528L8.48528 2.82843L7.07107 1.41421L1.41421 7.07107L0.707107 9.19239Z" fill="white"/>
+    <path d="M7.42462 1.06066L8.83883 2.47487L9.89949 1.41421L8.48528 0L7.42462 1.06066Z" fill="white"/>
+  </svg>
+</button>
 `;
 
 const items = document.querySelectorAll("#items li");
