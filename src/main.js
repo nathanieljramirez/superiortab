@@ -54,6 +54,8 @@ document.querySelector("#app").innerHTML = `
     <path d="M7.42462 1.06066L8.83883 2.47487L9.89949 1.41421L8.48528 0L7.42462 1.06066Z" fill="white"/>
   </svg>
 </button>
+
+<section class="${tab.editor}" style="display:none;"></section>
 `;
 
 const items = document.querySelectorAll("#items li");
@@ -73,4 +75,13 @@ items.forEach((item, index) => {
 document.querySelector("#search").addEventListener("submit", (event) => {
   event.preventDefault();
   window.location.href = `${selectedEngine.prefix}${document.querySelector("#searchbar").value.trim()}`;
+});
+
+document.querySelector("." + tab.edit).addEventListener("click", () => {
+  const editor = document.querySelector("." + tab.editor);
+  if (editor.style.display === "none") {
+    editor.style.display = "inline-block";
+  } else {
+    editor.style.display = "none";
+  }
 });
