@@ -33,19 +33,6 @@ document.querySelector("#app").innerHTML = `
     <form id="search">
         <input type="text" id="searchbar" placeholder="Search the web"></input>
     </form>
-    <div class="${tab.row}">
-      <p>Search engine:</p>
-      <details class="${tab.dropdown}">
-        <summary><img src="${selectedEngine.icon}"> ${selectedEngine.name}</summary>
-        <ul id="items">
-            ${engines
-              .map((engine) => {
-                return `<li>${engine.name}</li>`;
-              })
-              .join("")}
-        </ul>
-      </details>
-    </div>
 </section>
 
 <button class="${tab.edit}">
@@ -55,7 +42,20 @@ document.querySelector("#app").innerHTML = `
   </svg>
 </button>
 
-<section class="${tab.editor}" style="display:none;"></section>
+<section class="${tab.editor}" style="display:none;">
+  <h3>Background</h3>
+  <h3>Search Engine</h3>
+    <details class="${tab.dropdown}">
+      <summary><img src="${selectedEngine.icon}"> ${selectedEngine.name}</summary>
+      <ul id="items">
+          ${engines
+            .map((engine) => {
+              return `<li>${engine.name}</li>`;
+            })
+            .join("")}
+      </ul>
+    </details>
+</section>
 `;
 
 const items = document.querySelectorAll("#items li");
