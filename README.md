@@ -1,8 +1,13 @@
 # SuperiorTab
 
-A fast and lightweight new tab alternative made in Vite.js that removes AI features from search engines.
+A fast and lightweight new tab alternative made in Vite.js, removes AI overview and features from search engines.
 
-Quick look:
+## Features
+
+- Change background color
+- Change Search Engines
+
+## Quick look
 
 https://github.com/user-attachments/assets/f94de50e-5690-42ee-bdb2-9edae368f1b7
 
